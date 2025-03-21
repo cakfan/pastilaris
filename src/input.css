@@ -6,6 +6,7 @@
   --foreground: #0b251c;
   --primary: #b7eb38;
   --tab-off: #abb4b1;
+  --section: #edf3f1;
 }
 
 @theme inline {
@@ -15,6 +16,8 @@
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
   --color-tab-off: var(--tab-off);
+  --color-section: var(--section);
+  --drop-shadow-custom: 0 12px 30px rgba(4, 6, 36, 0.11);
 }
 
 @layer components {

@@ -8,7 +8,7 @@
     <link href="./output.css" rel="stylesheet" />
   </head>
   <body class="font-raleway bg-background">
-    <header class="bg-[#EDF3F1] w-full pb-[70px] pt-[200px]">
+    <header class="bg-section w-full pb-[70px] pt-[200px]">
       <div class="relative flex justify-center">
         <nav
           class="fixed z-50 top-[30px] left-1/2 -translate-x-1/2 flex items-center gap-[30px] w-[1130px] overflow-hidden bg-foreground rounded-[100px] py-2.5 px-[30px]"
@@ -126,6 +126,7 @@
       </div>
     </header>
     <main>
+      <!-- Stats Section -->
       <section class="flex justify-center h-[216px] bg-foreground">
         <div class="relative flex w-[1280px] px-[75px] py-[50px]">
           <div class="flex items-center justify-between w-full text-white">
@@ -173,6 +174,7 @@
           />
         </div>
       </section>
+
       <!-- Features services -->
       <section class="flex justify-center px-[126px] py-[100px]">
         <div class="flex flex-col gap-[50px]">
@@ -381,6 +383,66 @@
           </div>
 
           <!-- End Tabs -->
+        </div>
+      </section>
+
+      <!-- Featured Section -->
+      <section class="bg-section">
+        <div class="mx-auto px-[140px] py-[100px] w-[1280px]">
+          <div class="flex items-center justify-between gap-[30px]">
+            <div class="flex flex-col gap-[30px] w-[480px]">
+              <div class="flex flex-col gap-2.5">
+                <h3 class="text-[32px] leading-[46px] font-bold">
+                  Built For Everyone
+                </h3>
+                <p class="text-lg leading-8 font-medium">
+                  Track your customers behavior to make a good decision that
+                  helps the customer use our services better way.
+                </p>
+              </div>
+
+              <div class="flex items-center gap-6">
+                <a
+                  href="#"
+                  class="px-[30px] py-[20px] bg-primary rounded-[100px] text-[16px] font-bold leading-[19px] w-fit"
+                  >Get Started</a
+                >
+                <div class="flex items-center gap-1.5">
+                  <img
+                    src="./assets/images/icons/check.svg"
+                    alt="icon"
+                    class="h-6 w-6 shrink-0"
+                  />
+                  <p class="text-[14px] font-bold leading-[16px]">
+                    No credit card required, really.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="relative shrink-0 h-[349px] w-[450px]">
+              <img
+                src="./assets/images/thumbnails/featured-image.png"
+                alt="image"
+                class="absolute top-5 right-0 w-[380px] h-[285px]"
+              />
+              <div class="absolute top-0 left-0 w-[180px] drop-shadow-custom">
+                <img
+                  src="./assets/images/thumbnails/data-tracking.png"
+                  alt="image"
+                  class=""
+                />
+              </div>
+              <div
+                class="absolute bottom-0 right-[30px] w-[282px] drop-shadow-custom"
+              >
+                <img
+                  src="./assets/images/thumbnails/customer.png"
+                  alt="image"
+                  class=""
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
