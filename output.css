@@ -350,6 +350,9 @@
   .w-\[223px\] {
     width: 223px;
   }
+  .w-\[259px\] {
+    width: 259px;
+  }
   .w-\[260px\] {
     width: 260px;
   }
@@ -486,6 +489,9 @@
   .gap-\[85px\] {
     gap: 85px;
   }
+  .gap-\[156px\] {
+    gap: 156px;
+  }
   .overflow-hidden {
     overflow: hidden;
   }
@@ -587,6 +593,9 @@
   .pt-\[200px\] {
     padding-top: 200px;
   }
+  .pr-\[181px\] {
+    padding-right: 181px;
+  }
   .pb-\[70px\] {
     padding-bottom: 70px;
   }
@@ -647,6 +656,10 @@
   .leading-\[21px\] {
     --tw-leading: 21px;
     line-height: 21px;
+  }
+  .leading-\[24px\] {
+    --tw-leading: 24px;
+    line-height: 24px;
   }
   .leading-\[28px\] {
     --tw-leading: 28px;
