@@ -187,6 +187,9 @@
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
+  .top-5 {
+    top: calc(var(--spacing) * 5);
+  }
   .top-\[30px\] {
     top: 30px;
   }
@@ -196,8 +199,14 @@
   .right-0 {
     right: calc(var(--spacing) * 0);
   }
+  .right-\[30px\] {
+    right: 30px;
+  }
   .-bottom-\[1\.5px\] {
     bottom: calc(1.5px * -1);
+  }
+  .bottom-0 {
+    bottom: calc(var(--spacing) * 0);
   }
   .bottom-\[68px\] {
     bottom: 68px;
@@ -214,6 +223,9 @@
   .z-50 {
     z-index: 50;
   }
+  .mx-auto {
+    margin-inline: auto;
+  }
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
   }
@@ -226,20 +238,17 @@
   .ml-auto {
     margin-left: auto;
   }
-  .block {
-    display: block;
-  }
   .contents {
     display: contents;
   }
   .flex {
     display: flex;
   }
-  .hidden {
-    display: none;
-  }
   .inline-flex {
     display: inline-flex;
+  }
+  .h-6 {
+    height: calc(var(--spacing) * 6);
   }
   .h-10 {
     height: calc(var(--spacing) * 10);
@@ -259,6 +268,12 @@
   .h-\[216px\] {
     height: 216px;
   }
+  .h-\[285px\] {
+    height: 285px;
+  }
+  .h-\[349px\] {
+    height: 349px;
+  }
   .h-\[470px\] {
     height: 470px;
   }
@@ -270,6 +285,9 @@
   }
   .h-auto {
     height: auto;
+  }
+  .w-6 {
+    width: calc(var(--spacing) * 6);
   }
   .w-\[1px\] {
     width: 1px;
@@ -286,17 +304,26 @@
   .w-\[150px\] {
     width: 150px;
   }
+  .w-\[180px\] {
+    width: 180px;
+  }
   .w-\[223px\] {
     width: 223px;
   }
   .w-\[260px\] {
     width: 260px;
   }
+  .w-\[282px\] {
+    width: 282px;
+  }
   .w-\[316px\] {
     width: 316px;
   }
   .w-\[370px\] {
     width: 370px;
+  }
+  .w-\[380px\] {
+    width: 380px;
   }
   .w-\[425px\] {
     width: 425px;
@@ -309,6 +336,9 @@
   }
   .w-\[470px\] {
     width: 470px;
+  }
+  .w-\[480px\] {
+    width: 480px;
   }
   .w-\[484px\] {
     width: 484px;
@@ -356,6 +386,9 @@
   .justify-center {
     justify-content: center;
   }
+  .gap-1\.5 {
+    gap: calc(var(--spacing) * 1.5);
+  }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
   }
@@ -373,6 +406,9 @@
   }
   .gap-5 {
     gap: calc(var(--spacing) * 5);
+  }
+  .gap-6 {
+    gap: calc(var(--spacing) * 6);
   }
   .gap-10 {
     gap: calc(var(--spacing) * 10);
@@ -418,9 +454,6 @@
   .bg-\[\#6C8079\] {
     background-color: #6C8079;
   }
-  .bg-\[\#EDF3F1\] {
-    background-color: #EDF3F1;
-  }
   .bg-background {
     background-color: var(--background);
   }
@@ -429,6 +462,9 @@
   }
   .bg-primary {
     background-color: var(--primary);
+  }
+  .bg-section {
+    background-color: var(--section);
   }
   .bg-tab-off {
     background-color: var(--tab-off);
@@ -453,6 +489,9 @@
   }
   .px-\[126px\] {
     padding-inline: 126px;
+  }
+  .px-\[140px\] {
+    padding-inline: 140px;
   }
   .py-2\.5 {
     padding-block: calc(var(--spacing) * 2.5);
@@ -495,6 +534,9 @@
     font-size: var(--text-lg);
     line-height: var(--tw-leading, var(--text-lg--line-height));
   }
+  .text-\[14px\] {
+    font-size: 14px;
+  }
   .text-\[16px\] {
     font-size: 16px;
   }
@@ -513,6 +555,10 @@
   .leading-8 {
     --tw-leading: calc(var(--spacing) * 8);
     line-height: calc(var(--spacing) * 8);
+  }
+  .leading-\[16px\] {
+    --tw-leading: 16px;
+    line-height: 16px;
   }
   .leading-\[19px\] {
     --tw-leading: 19px;
@@ -563,6 +609,10 @@
   .opacity-0 {
     opacity: 0%;
   }
+  .drop-shadow-custom {
+    --tw-drop-shadow: drop-shadow(0 12px 30px rgba(4, 6, 36, 0.11));
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  }
   .transition-all {
     transition-property: all;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
@@ -599,6 +649,7 @@
   --foreground: #0b251c;
   --primary: #b7eb38;
   --tab-off: #abb4b1;
+  --section: #edf3f1;
 }
 @layer components {
   #tab-icon-container, #tab-icon {
@@ -691,6 +742,46 @@
   inherits: false;
 }
 @property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-blur {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-brightness {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-contrast {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-grayscale {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-hue-rotate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-invert {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-opacity {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-saturate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-sepia {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow {
   syntax: "*";
   inherits: false;
 }
