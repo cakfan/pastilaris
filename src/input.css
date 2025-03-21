@@ -18,6 +18,20 @@
   --color-tab-off: var(--tab-off);
   --color-section: var(--section);
   --drop-shadow-custom: 0 12px 30px rgba(4, 6, 36, 0.11);
+
+  --animate-fill-arrow: fillAnimation 2s infinite;
+
+  @keyframes fillAnimation {
+    0% {
+      fill: transparent;
+    }
+    50% {
+      fill: currentColor;
+    }
+    100% {
+      fill: transparent;
+    }
+  }
 }
 
 @layer components {
