@@ -7,6 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-amber-100: oklch(0.962 0.059 95.617);
     --color-white: #fff;
     --spacing: 0.25rem;
     --text-lg: 1.125rem;
@@ -214,8 +215,14 @@
   .left-0 {
     left: calc(var(--spacing) * 0);
   }
+  .left-1 {
+    left: calc(var(--spacing) * 1);
+  }
   .left-1\/2 {
     left: calc(1/2 * 100%);
+  }
+  .left-\[67px\] {
+    left: 67px;
   }
   .left-\[227\.77px\] {
     left: 227.77px;
@@ -226,14 +233,29 @@
   .mx-auto {
     margin-inline: auto;
   }
+  .mt-5 {
+    margin-top: calc(var(--spacing) * 5);
+  }
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
+  }
+  .mr-\[27\.33px\] {
+    margin-right: 27.33px;
   }
   .mr-\[51px\] {
     margin-right: 51px;
   }
+  .mb-5 {
+    margin-bottom: calc(var(--spacing) * 5);
+  }
   .ml-\[52px\] {
     margin-left: 52px;
+  }
+  .ml-\[67px\] {
+    margin-left: 67px;
+  }
+  .ml-\[514px\] {
+    margin-left: 514px;
   }
   .ml-auto {
     margin-left: auto;
@@ -246,6 +268,9 @@
   }
   .inline-flex {
     display: inline-flex;
+  }
+  .table {
+    display: table;
   }
   .h-6 {
     height: calc(var(--spacing) * 6);
@@ -313,6 +338,9 @@
   .w-\[260px\] {
     width: 260px;
   }
+  .w-\[276px\] {
+    width: 276px;
+  }
   .w-\[282px\] {
     width: 282px;
   }
@@ -361,8 +389,24 @@
   .max-w-\[1280px\] {
     max-width: 1280px;
   }
+  .flex-shrink {
+    flex-shrink: 1;
+  }
   .shrink-0 {
     flex-shrink: 0;
+  }
+  .flex-grow {
+    flex-grow: 1;
+  }
+  .grow {
+    flex-grow: 1;
+  }
+  .border-collapse {
+    border-collapse: collapse;
+  }
+  .-translate-x-1 {
+    --tw-translate-x: calc(var(--spacing) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .-translate-x-1\/2 {
     --tw-translate-x: calc(calc(1/2 * 100%) * -1);
@@ -374,17 +418,26 @@
   .cursor-pointer {
     cursor: pointer;
   }
+  .resize {
+    resize: both;
+  }
   .flex-col {
     flex-direction: column;
   }
   .items-center {
     align-items: center;
   }
+  .justify-around {
+    justify-content: space-around;
+  }
   .justify-between {
     justify-content: space-between;
   }
   .justify-center {
     justify-content: center;
+  }
+  .gap-1 {
+    gap: calc(var(--spacing) * 1);
   }
   .gap-1\.5 {
     gap: calc(var(--spacing) * 1.5);
@@ -454,6 +507,9 @@
   .bg-\[\#6C8079\] {
     background-color: #6C8079;
   }
+  .bg-amber-100 {
+    background-color: var(--color-amber-100);
+  }
   .bg-background {
     background-color: var(--background);
   }
@@ -475,6 +531,12 @@
   .bg-white {
     background-color: var(--color-white);
   }
+  .p-2 {
+    padding: calc(var(--spacing) * 2);
+  }
+  .p-2\.5 {
+    padding: calc(var(--spacing) * 2.5);
+  }
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
   }
@@ -492,6 +554,9 @@
   }
   .px-\[140px\] {
     padding-inline: 140px;
+  }
+  .py-2 {
+    padding-block: calc(var(--spacing) * 2);
   }
   .py-2\.5 {
     padding-block: calc(var(--spacing) * 2.5);
@@ -513,6 +578,9 @@
   }
   .pt-\[200px\] {
     padding-top: 200px;
+  }
+  .pr-\[27\.33px\] {
+    padding-right: 27.33px;
   }
   .pb-\[70px\] {
     padding-bottom: 70px;
@@ -551,6 +619,10 @@
   }
   .text-\[50px\] {
     font-size: 50px;
+  }
+  .leading-7 {
+    --tw-leading: calc(var(--spacing) * 7);
+    line-height: calc(var(--spacing) * 7);
   }
   .leading-8 {
     --tw-leading: calc(var(--spacing) * 8);
@@ -606,11 +678,21 @@
   .text-white {
     color: var(--color-white);
   }
+  .underline {
+    text-decoration-line: underline;
+  }
   .opacity-0 {
     opacity: 0%;
   }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
+  }
   .drop-shadow-custom {
     --tw-drop-shadow: drop-shadow(0 12px 30px rgba(4, 6, 36, 0.11));
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  }
+  .filter {
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
   .transition-all {
@@ -744,6 +826,11 @@
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
+}
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
 }
 @property --tw-blur {
   syntax: "*";
