@@ -61,4 +61,13 @@
     -webkit-mask-size: contain;
     mask-size: contain;
   }
+
+  .icon-check {
+    -webkit-mask-image: url("./assets/images/icons/ic_check.svg");
+    mask-image: url("./assets/images/icons/ic_check.svg");
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+  }
 }
