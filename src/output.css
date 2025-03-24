@@ -343,6 +343,9 @@
   .h-\[470px\] {
     height: 470px;
   }
+  .h-\[500px\] {
+    height: 500px;
+  }
   .h-\[506px\] {
     height: 506px;
   }
@@ -453,6 +456,9 @@
   }
   .max-w-\[1280px\] {
     max-width: 1280px;
+  }
+  .flex-1 {
+    flex: 1;
   }
   .shrink-0 {
     flex-shrink: 0;
