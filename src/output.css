@@ -208,8 +208,20 @@
   .bottom-0 {
     bottom: calc(var(--spacing) * 0);
   }
+  .bottom-\[32px\] {
+    bottom: 32px;
+  }
+  .bottom-\[38px\] {
+    bottom: 38px;
+  }
+  .bottom-\[48px\] {
+    bottom: 48px;
+  }
   .bottom-\[50px\] {
     bottom: 50px;
+  }
+  .bottom-\[58px\] {
+    bottom: 58px;
   }
   .bottom-\[68px\] {
     bottom: 68px;
