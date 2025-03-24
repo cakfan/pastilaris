@@ -229,14 +229,8 @@
   .z-50 {
     z-index: 50;
   }
-  .-m-px {
-    margin: -1px;
-  }
   .-mx-1 {
     margin-inline: calc(var(--spacing) * -1);
-  }
-  .-mx-2 {
-    margin-inline: calc(var(--spacing) * -2);
   }
   .mx-auto {
     margin-inline: auto;
@@ -268,17 +262,11 @@
   .ml-auto {
     margin-left: auto;
   }
-  .block {
-    display: block;
-  }
   .contents {
     display: contents;
   }
   .flex {
     display: flex;
-  }
-  .inline-block {
-    display: inline-block;
   }
   .inline-flex {
     display: inline-flex;
@@ -437,9 +425,6 @@
   .transform {
     transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
   }
-  .animate-fill-arrow {
-    animation: fillAnimation 2s infinite;
-  }
   .cursor-pointer {
     cursor: pointer;
   }
@@ -556,14 +541,8 @@
   .p-2\.5 {
     padding: calc(var(--spacing) * 2.5);
   }
-  .px-0\.5 {
-    padding-inline: calc(var(--spacing) * 0.5);
-  }
   .px-1 {
     padding-inline: calc(var(--spacing) * 1);
-  }
-  .px-2 {
-    padding-inline: calc(var(--spacing) * 2);
   }
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
@@ -721,9 +700,6 @@
   .text-\[\#040624\] {
     color: #040624;
   }
-  .text-foreground {
-    color: var(--foreground);
-  }
   .text-white {
     color: var(--color-white);
   }
@@ -761,6 +737,13 @@
     &:hover {
       @media (hover: hover) {
         color: var(--primary);
+      }
+    }
+  }
+  .hover\:underline {
+    &:hover {
+      @media (hover: hover) {
+        text-decoration-line: underline;
       }
     }
   }
@@ -917,15 +900,4 @@
 @property --tw-duration {
   syntax: "*";
   inherits: false;
-}
-@keyframes fillAnimation {
-  0% {
-    fill: transparent;
-  }
-  50% {
-    fill: currentColor;
-  }
-  100% {
-    fill: transparent;
-  }
 }
