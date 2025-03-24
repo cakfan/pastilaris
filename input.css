@@ -34,6 +34,12 @@
   }
 }
 
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
 @layer components {
   #tab-icon-container,
   #tab-icon {

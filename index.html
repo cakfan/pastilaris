@@ -50,12 +50,12 @@
           <div class="ml-auto flex items-center gap-3.5">
             <a
               href="#"
-              class="bg-background text-[16px] font-semibold px-5 py-3 rounded-[100px]"
+              class="bg-background text-[16px] font-semibold px-5 h-[43px] flex items-center rounded-[100px]"
               >Call Sales</a
             >
             <a
               href="#"
-              class="border border-white text-white text-[16px] font-semibold px-5 py-3 rounded-[100px]"
+              class="border border-white text-white text-[16px] font-semibold px-5 h-[43px] flex items-center rounded-[100px]"
               >My Account</a
             >
           </div>
@@ -65,13 +65,12 @@
             <div class="flex flex-col gap-[30px] w-[550px] shrink-0 py-[92px]">
               <h1 class="text-6xl font-extrabold leading-[70px]">
                 <mark
-                  class="bg-primary inline-flex items-center justify-center h-10 w-[223px]"
+                  class="bg-primary -mx-1 inline-flex items-center justify-center h-10 w-[223px]"
                   >Making</mark
                 >
-                Great<br />
-                Business
+                Great   Business
                 <mark
-                  class="bg-primary inline-flex items-center justify-center h-10 w-[260px]"
+                  class="bg-primary inline-flex -mx-1 items-center justify-center h-10 w-[260px]"
                   >Decision</mark
                 >
               </h1>
@@ -91,19 +90,24 @@
               </div>
             </div>
 
-            <div class="relative w-[550px] h-[507px]">
+            <div class="relative shrink-0 w-[550px] h-[507px]">
+
               <img
-                src="./assets/images/thumbnails/ui.png"
-                class="ml-[52px] mr-[51px] w-[447px] h-[506px]"
+              src="./assets/images/thumbnails/ui.png"
+              class="ml-[52px] mr-[51px] w-[447px] h-[506px]"
               />
-              <img
+              <div class="absolute bottom-[68px] left-0 w-[316px] h-auto drop-shadow-custom">
+                <img
                 src="./assets/images/thumbnails/review.png"
-                class="absolute bottom-[68px] left-0 w-[316px] h-auto"
-              />
-              <img
+                class=""
+                />
+              </div>
+              <div class="absolute top-[77px] right-0 w-[136px] h-auto drop-shadow-custom">
+                <img
                 src="./assets/images/thumbnails/badge.png"
-                class="absolute top-[77px] right-0 w-[136px] h-auto"
-              />
+                class=""
+                />
+              </div>
             </div>
           </div>
           <div class="flex flex-col gap-[30px] items-center mt-10">
@@ -126,9 +130,9 @@
     <main>
       <!-- Stats Section -->
       <section class="flex justify-center h-[216px] bg-foreground">
-        <div class="relative flex w-[1280px] px-[75px] py-[50px]">
+        <div class="relative flex w-[1280px] px-[75px] py-[50px] overflow-hidden">
           <div class="flex items-center justify-between w-full text-white">
-            <h3 class="text-[32px] leading-[46px] font-bold w-[425px]">
+            <h3 class="text-[32px] z-50 leading-[46px] font-bold w-[425px]">
               We Have Big Reasons Improve People’s Life Today
             </h3>
             <div class="flex gap-20">
@@ -168,7 +172,7 @@
           <img
             src="./assets/images/backgrounds/bg-stats.svg"
             alt="background"
-            class="absolute left-[227.77px] top-0"
+            class="absolute left-[227.77px] h-[248.13px] w-[345.5px] -top-[16.06px]"
           />
         </div>
       </section>
@@ -634,11 +638,12 @@
       </section>
 
       <!-- SaaS Section -->
-      <section class="bg-foreground flex justify-center">
-        <div class="flex items-center gap-[85px] pl-[75px]">
-          <div class="flex flex-col gap-[30px]">
-            <div class="flex flex-col gap-2.5 text-white">
-              <h2 class="text-[32px] leading-[46px] font-bold">
+      <section class="bg-foreground">
+        <div class="mx-auto w-[1280px] pl-[75px] overflow-hidden">
+          <div class="flex items-center gap-[85px] w-full">
+            <div class="flex flex-col gap-[30px]">
+              <div class="flex flex-col gap-2.5 text-white">
+                <h2 class="text-[32px] leading-[46px] font-bold">
                 Grow Your SaaS
               </h2>
               <p class="w-[484px] text-lg leading-[32px] font-medium">
@@ -658,9 +663,9 @@
                 >
                   <div class="icon-check w-3.5 h-3.5 bg-foreground">
                     <img
-                      src="./assets/images/icons/ic_check.svg"
-                      alt="icon"
-                      class="opacity-0 w-3.5 h-3.5"
+                    src="./assets/images/icons/ic_check.svg"
+                    alt="icon"
+                    class="opacity-0 w-3.5 h-3.5"
                     />
                   </div>
                 </div>
@@ -673,8 +678,9 @@
           <img
             src="./assets/images/thumbnails/sass-cover.png"
             alt="image"
-            class="w-[640px]"
-          />
+            class="w-[640px] h-[500px]"
+            />
+          </div>
         </div>
       </section>
     </main>
