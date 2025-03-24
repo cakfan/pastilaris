@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const indicators = document.querySelectorAll(".tab-indicator");
   const tabContents = [
     {
-      title: "We’re Helping Big Global Companies Grow",
+      title: "We’re Helping Big <br/> Global Companies Grow",
       description:
         "Track your customers behavior to make a good decision that helps the customer use our services better way.",
       features: [
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
     tabContent.querySelector(".tab-img img").src = selectedContent.image;
 
     // Update title
-    tabContent.querySelector(".tab-title").textContent = selectedContent.title;
+    tabContent.querySelector(".tab-title").innerHTML = selectedContent.title;
 
     // Update description
     tabContent.querySelector(".tab-description").textContent =
@@ -98,6 +98,8 @@ document.addEventListener("DOMContentLoaded", () => {
       // Remove active state from all tabs
       tabs.forEach((t) => {
         t.classList.remove("active");
+        t.querySelector("h3").classList.remove("font-semibold");
+        t.querySelector("h3").classList.add("font-medium");
         t.querySelector("#tab-icon-container").classList.remove("bg-primary");
         t.querySelector("#tab-icon-container").classList.add("bg-tab-off");
         t.querySelector("#tab-icon").classList.remove("bg-foreground");
@@ -108,6 +110,9 @@ document.addEventListener("DOMContentLoaded", () => {
       tab.classList.add("active");
 
       // Update the color of the title for the active tab
+      const tabTitle = tab.querySelector("h3");
+      tabTitle.classList.remove("font-medium");
+      tabTitle.classList.add("font-semibold");
       const tabIconContainer = tab.querySelector("#tab-icon-container");
       tabIconContainer.classList.remove("bg-tab-off");
       tabIconContainer.classList.add("bg-primary");
@@ -126,6 +131,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Initialize the first tab as active
   tabs[0].classList.add("active");
+  tabs[0].querySelector("h3").classList.remove("font-medium");
+  tabs[0].querySelector("h3").classList.add("font-semibold");
   tabs[0].querySelector("#tab-icon-container").classList.remove("bg-tab-off");
   tabs[0].querySelector("#tab-icon-container").classList.add("bg-primary");
   tabs[0].querySelector("#tab-icon").classList.remove("bg-white");
