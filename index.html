@@ -50,12 +50,12 @@
           <div class="ml-auto flex items-center gap-3.5">
             <a
               href="#"
-              class="bg-background text-[16px] font-semibold px-5 h-[43px] flex items-center rounded-[100px]"
+              class="bg-background text-[16px] font-semibold px-5 h-[43px] flex items-center rounded-[100px] transition-all duration-300 hover:shadow-secondary"
               >Call Sales</a
             >
             <a
               href="#"
-              class="border border-white text-white text-[16px] font-semibold px-5 h-[43px] flex items-center rounded-[100px]"
+              class="border border-white text-white text-[16px] font-semibold px-5 h-[43px] flex items-center rounded-[100px] transition-all duration-300 hover:ring-2 hover:ring-primary hover:bg-primary hover:border-primary hover:text-foreground"
               >My Account</a
             >
           </div>
@@ -81,21 +81,22 @@
               <div class="flex gap-3.5">
                 <a
                   href="#"
-                  class="px-[30px] py-[20px] rounded-[100px] bg-primary text-[16px] font-bold leading-[19px]"
+                  class="px-[30px] py-[20px] rounded-[100px] bg-primary text-[16px] font-bold leading-[19px] transition-all duration-300 hover:shadow-primary"
                   >Get Started, It’s Free</a>
                 <a
                   href="#"
-                  class="px-[30px] py-[20px] rounded-[100px] border border-foreground text-[16px] font-bold leading-[19px]"
+                  class="px-[30px] py-[20px] rounded-[100px] border border-foreground text-[16px] font-bold leading-[19px] transition-all duration-300 hover:ring-2 hover:ring-primary hover:bg-primary hover:border-primary hover:text-foreground"
                   >Watch Demo</a>
               </div>
             </div>
 
             <div class="relative shrink-0 w-[550px] h-[507px]">
-
-              <img
-              src="./assets/images/thumbnails/ui.png"
-              class="ml-[52px] mr-[51px] w-[447px] h-[506px]"
-              />
+              <div class="ml-[52px] mr-[51px] w-[447px] h-[506px] overflow-clip">
+                <img
+                src="./assets/images/thumbnails/ui.png"
+                class="object-cover"
+                />
+              </div>
               <div class="absolute bottom-[68px] left-0 w-[316px] h-auto drop-shadow-custom">
                 <img
                 src="./assets/images/thumbnails/review.png"
@@ -111,11 +112,11 @@
             </div>
           </div>
           <div class="flex flex-col gap-[30px] items-center mt-10">
-            <h3
+            <h2
               class="w-[370px] font-bold text-[32px] leading-[46px] text-center"
             >
               We’re Helping Big Global Companies Grow
-            </h3>
+            </h2>
             <div class="flex gap-[70px] h-[34px]">
               <img src="./assets/images/icons/logoipsum-1.svg" />
               <img src="./assets/images/icons/logoipsum-2.svg" />
@@ -132,9 +133,9 @@
       <section class="flex justify-center h-[216px] bg-foreground">
         <div class="relative flex w-[1280px] px-[75px] py-[50px] overflow-hidden">
           <div class="flex items-center justify-between w-full text-white">
-            <h3 class="text-[32px] z-50 leading-[46px] font-bold w-[425px]">
+            <h2 class="text-[32px] z-10 leading-[46px] font-bold w-[425px]">
               We Have Big Reasons Improve People’s Life Today
-            </h3>
+            </h2>
             <div class="flex gap-20">
               <div class="flex gap-4">
                 <div
@@ -143,12 +144,12 @@
                   <img src="./assets/images/icons/crown.svg" alt="logo" />
                 </div>
                 <div class="flex flex-col gap-2">
-                  <h4 class="font-poppins text-[42px] leading-[46px] font-bold">
+                  <h3 class="font-poppins text-[42px] leading-[46px] font-bold">
                     12,390
-                  </h4>
-                  <div class="w-[150px] text-lg leading-8">
+                  </h3>
+                  <p class="w-[150px] text-lg leading-8">
                     Happy Customers Using Product
-                  </div>
+                  </p>
                 </div>
               </div>
 
@@ -159,12 +160,12 @@
                   <img src="./assets/images/icons/3dcube.svg" alt="logo" />
                 </div>
                 <div class="flex flex-col gap-2">
-                  <h4 class="font-poppins text-[42px] leading-[46px] font-bold">
+                  <h3 class="font-poppins text-[42px] leading-[46px] font-bold">
                     829
-                  </h4>
-                  <div class="w-[150px] text-lg leading-8">
+                  </h3>
+                  <p class="w-[150px] text-lg leading-8">
                     Successful On Big Projects
-                  </div>
+                  </p>
                 </div>
               </div>
             </div>
@@ -179,7 +180,7 @@
 
       <!-- Features services -->
       <section class="flex justify-center px-[126px] py-[100px]">
-        <div class="flex flex-col gap-[50px]">
+        <div class="flex flex-col gap-[50px] w-[1280px]">
           <div class="flex flex-col gap-3">
             <h2 class="text-[50px] text-center leading-[59px] font-extrabold">
               Good For Your Business
@@ -211,7 +212,7 @@
                   </div>
                 </div>
                 <h3
-                  class="font-poppins font-semibold text-[20px] leading-[30px]"
+                  class="font-poppins text-nowrap font-semibold text-[20px] leading-[30px]"
                 >
                   Automations
                 </h3>
@@ -243,7 +244,7 @@
                   </div>
                 </div>
                 <h3
-                  class="font-poppins font-semibold text-[20px] leading-[30px]"
+                  class="font-poppins text-nowrap font-medium text-[20px] leading-[30px]"
                 >
                   Real-Time
                 </h3>
@@ -275,7 +276,7 @@
                   </div>
                 </div>
                 <h3
-                  class="font-poppins font-semibold text-[20px] leading-[30px]"
+                  class="font-poppins text-nowrap font-medium text-[20px] leading-[30px]"
                 >
                   Lifetime Support
                 </h3>
@@ -307,7 +308,7 @@
                   </div>
                 </div>
                 <h3
-                  class="font-poppins font-semibold text-[20px] leading-[30px]"
+                  class="font-poppins text-nowrap font-medium text-[20px] leading-[30px]"
                 >
                   High Protection
                 </h3>
@@ -322,14 +323,14 @@
 
           <!-- Tab content -->
           <div class="tab-content flex items-center gap-[50px] px-[29px]">
-            <div class="tab-img w-[450px] h-[470px] shrink-0">
-              <img src="./assets/images/thumbnails/overview.png" alt="image" />
+            <div class="tab-img w-[450px] h-[470px] shrink-0 overflow-clip">
+              <img src="./assets/images/thumbnails/overview.png" alt="image" class="object-cover" />
             </div>
             <div class="flex flex-col gap-[30px]">
               <div class="flex flex-col gap-2.5 w-[470px]">
-                <h3 class="tab-title text-[32px] leading-[46px] font-bold">
-                  We’re Helping Big Global Companies Grow
-                </h3>
+                <h4 class="tab-title text-[32px] leading-[46px] font-bold">
+                  We’re Helping Big <br/> Global Companies Grow
+                </h4>
                 <p class="tab-description text-lg leading-8 font-medium">
                   Track your customers behavior to make a good decision that
                   helps the customer use our services better way.
@@ -378,7 +379,7 @@
               </div>
               <a
                 href="#"
-                class="px-5 py-3 text-[16px] leading-[19px] w-fit font-semibold border border-foreground rounded-[100px]"
+                class="px-5 py-3 text-[16px] leading-[19px] w-fit font-semibold border border-foreground rounded-[100px] transition-all duration-300 hover:ring-2 hover:ring-primary hover:bg-primary hover:border-primary hover:text-foreground"
                 >Learn More</a
               >
             </div>
@@ -394,9 +395,9 @@
           <div class="flex items-center justify-between gap-[30px]">
             <div class="flex flex-col gap-[30px] w-[480px]">
               <div class="flex flex-col gap-2.5">
-                <h3 class="text-[32px] leading-[46px] font-bold">
+                <h2 class="text-[32px] leading-[46px] font-bold">
                   Built For Everyone
-                </h3>
+                </h2>
                 <p class="text-lg leading-8 font-medium">
                   Track your customers behavior to make a good decision that
                   helps the customer use our services better way.
@@ -406,7 +407,7 @@
               <div class="flex items-center gap-6">
                 <a
                   href="#"
-                  class="px-[30px] py-[20px] bg-primary rounded-[100px] text-[16px] font-bold leading-[19px] w-fit"
+                  class="px-[30px] py-[20px] bg-primary rounded-[100px] text-[16px] font-bold leading-[19px] w-fit transition-all duration-300 hover:shadow-primary"
                   >Get Started</a
                 >
                 <div class="flex items-center gap-1.5">
@@ -428,11 +429,13 @@
               </div>
             </div>
             <div class="relative shrink-0 h-[349px] w-[450px]">
-              <img
+              <div class="absolute top-5 right-0 w-[380px] h-[285px] overflow-clip">
+                <img
                 src="./assets/images/thumbnails/featured-image.png"
                 alt="image"
-                class="absolute top-5 right-0 w-[380px] h-[285px]"
-              />
+                class="object-cover"
+                />
+              </div>
               <div class="absolute top-0 left-0 w-[180px] drop-shadow-custom">
                 <img
                   src="./assets/images/thumbnails/data-tracking.png"
@@ -589,11 +592,13 @@
                 <img src="./assets/images/icons/star.svg" alt="icon" />
               </div>
               <div class="flex flex-col gap-2.5">
-                <h2 class="w-[470px] text-[32px] leading-[46px] font-bold">
-                  Pastilaris figured out that our previous
-                  <mark class="bg-primary px-1 -mx-1">system lacking of automation</mark>
-                  and spend a lot of time doing wrong things.
-                </h2>
+                <p class="w-[470px] text-[32px] leading-[46px] font-bold">
+                  <strong>
+                    Pastilaris figured out that our previous
+                    <mark class="bg-primary px-1 -mx-1">system lacking of automation</mark>
+                    and spend a lot of time doing wrong things.
+                  </strong>
+                </p>
                 <p class="text-[16px] leading-[28px] font-medium">
                   Angga Yin, CEO Digissets Ltd
                 </p>
@@ -654,7 +659,7 @@
             <div class="flex items-center gap-6">
               <a
                 href="#"
-                class="px-[30px] py-[20px] text-[16px] font-bold leading-[19px] rounded-[100px] bg-primary"
+                class="px-[30px] py-[20px] text-[16px] font-bold leading-[19px] rounded-[100px] bg-primary transition-all duration-300 hover:shadow-primary"
                 >Get Started</a
               >
               <div class="flex items-center gap-1.5 text-white">
@@ -675,11 +680,13 @@
               </div>
             </div>
           </div>
-          <img
+          <div class="w-[640px] h-[500px]">
+            <img
             src="./assets/images/thumbnails/sass-cover.png"
             alt="image"
-            class="w-[640px] h-[500px]"
+            class="object-cover"
             />
+          </div>
           </div>
         </div>
       </section>

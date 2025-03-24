@@ -18,6 +18,8 @@
   --color-tab-off: var(--tab-off);
   --color-section: var(--section);
   --drop-shadow-custom: 0 12px 30px rgba(4, 6, 36, 0.11);
+  --shadow-primary: 0 4px 10px 0 rgba(183, 235, 56, 0.8);
+  --shadow-secondary: 0 4px 10px 0 rgba(255, 255, 255, 0.8);
 
   --animate-fill-arrow: fillAnimation 2s infinite;
 
