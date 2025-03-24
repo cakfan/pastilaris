@@ -549,6 +549,9 @@
   .overflow-hidden {
     overflow: hidden;
   }
+  .rounded-\[26px\] {
+    border-radius: 26px;
+  }
   .rounded-\[100px\] {
     border-radius: 100px;
   }
